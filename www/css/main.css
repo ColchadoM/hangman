@@ -1,0 +1,162 @@
+
+html,
+body {
+  height: 100%;
+  margin: 0
+}
+
+#main-container {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#title {
+  width: 455px;
+  height: 90px;
+
+  position: relative;
+
+  margin: auto;
+  margin-top: 35px;
+
+  font-size: 70px;
+  font-family: monospace;
+  text-align: center;
+}
+
+#title > div {
+  position: relative;
+  float: left;
+}
+
+.pepper-title {
+  width: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pepper-title img {
+  width: 100%;
+  height: auto;
+}
+
+#content {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#content > div {
+  position: relative;
+  float: left;
+}
+
+#hangman {
+  width: 350px;
+  height: 455px;
+
+  margin-left: 10px;
+}
+
+.hangman-part img,
+#hangman-base img {
+  width: 100%;
+  height: auto;
+}
+
+.hangman-part,
+#hangman-base {
+  position: absolute;
+}
+
+.hangman-part[part="head"] {
+  position: absolute;
+  width: 22%;
+  top: 66px;
+  left: 230px;
+}
+
+.hangman-part[part="body"] {
+  width: 2.5%;
+  top: 148px;
+  left: 261px;
+}
+
+.hangman-part[part="left-arm"] {
+  width: 20%;
+  top: 180px;
+  left: 198px;
+}
+
+.hangman-part[part="right-arm"] {
+  width: 20%;
+  top: 180px;
+  left: 262px;
+}
+
+.hangman-part[part="left-pepper"] {
+  width: 10%;
+  top: 180px;
+  left: 178px;
+  transform: rotate(-62deg);
+}
+
+.hangman-part[part="right-pepper"] {
+  width: 10%;
+  top: 172px;
+  left: 313px;
+  transform: rotate(62deg);
+}
+
+.hangman-part[part="left-feet"] {
+  width: 18%;
+  top: 235px;
+  left: 207px;
+}
+
+.hangman-part[part="right-feet"] {
+  width: 18%;
+  top: 235px;
+  left: 262px;
+}
+
+#game-gui {
+  width: calc(100% - 400px);
+  height: 100%;
+}
+
+#game-gui > div {
+  position: relative;
+  float: left;
+}
+
+#word-display {
+  width: 100%;
+  height: 100px;
+
+  font-size: 84px;
+  text-align: center;
+}
+
+#answer-gui {
+  width: 100%;
+  height: 100px;
+
+  margin-top: 10px;
+}
+
+#past-answers,
+#current-answers {
+  width: 100%;
+
+  position: relative;
+  float: left;
+}
+
+input[type="text"] {
+  width: 50px;
+}
